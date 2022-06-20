@@ -10,6 +10,9 @@ import About from './components/About';
 import Character from './components/Character';
 import Saga from './components/Saga';
 import Techniques from './components/Techniques';
+import { Fragment } from 'react';
+import ScrollButton from './components/ScrollButton';
+import { Content, Heading } from './components/ScrollButtonStyles';
 
 
 function App() {
@@ -25,7 +28,7 @@ function App() {
         <li><Link to='/saga'>Sagas</Link></li>
         <li><Link to='/techniques'>Techniques</Link></li>
       </ul>
-      <Routes>
+      <Routes className="nav-options">
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
         <Route path='/character' element={<Character/>} />
@@ -40,6 +43,8 @@ function App() {
     <CharacterContainer />
     <SagaContainer />
     <TechniquesContainer />
+    <Content />
+    <ScrollButton />
     </>
   );
 }

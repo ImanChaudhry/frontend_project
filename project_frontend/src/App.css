@@ -5,8 +5,18 @@
 .App ul {
   display: flex;
   justify-content: space-around;
+  border-style: solid;
 }
 
 .App ul li {
   list-style: none;
+}
+
+body {
+  background-color: rgb(209, 126, 25);
+  /* background-color: #F29F05; */
+  color: white;
+  padding: 40px;
+  font-family: Arial;
+  text-align: center;
 }
