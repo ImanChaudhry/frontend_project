@@ -21,8 +21,9 @@ function App() {
     <>
 
 <Router>
-      <div className="App">
-      <img className="logo-container" src="images/Logo-transparent-background.png" alt="Three of Might logo" height="300" width="300"/>
+    <div className="App">
+      
+      <div className='navbar'>
       <ul>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/about'>About</Link></li>
@@ -30,6 +31,9 @@ function App() {
         <li><Link to='/saga'>Sagas</Link></li>
         <li><Link to='/techniques'>Techniques</Link></li>
       </ul>
+      </div>
+      <img className="logo-container" src="images/Logo-transparent-background.png" alt="Three of Might logo" size="400x400"/>
+
       <SearchBar />
       <Routes className="nav-options">
         <Route path='/' element={<Home/>} />

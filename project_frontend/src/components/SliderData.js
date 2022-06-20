@@ -10,7 +10,7 @@ export const SliderData = [
         desc: 'Add quote 2'
     },
     {
-        image: '/images/Logo.jpg',
+        image: '/images/Logo-transparent-background.png',
         heading: 'Heading 3',
         desc: 'add quote 3'
     }
