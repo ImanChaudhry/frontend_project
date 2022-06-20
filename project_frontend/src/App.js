@@ -22,6 +22,7 @@ function App() {
 
 <Router>
       <div className="App">
+      <img className="logo-container" src="images/Logo-transparent-background.png" alt="Three of Might logo" height="300" width="300"/>
       <ul>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/about'>About</Link></li>

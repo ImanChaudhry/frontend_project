@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+/* .logo-container {
+justify-content: flex-start;
+} */
+
 .App ul {
   display: flex;
   justify-content: space-around;
@@ -66,4 +70,10 @@ body {
   opacity: 1;
   transition-duration: 1s;
   transform: scale(1.08);
+}
+
+.content {
+  color: black;
+  animation: slide-right 1s ease .5s;
+  animation-fill-mode: forwards;
 }
