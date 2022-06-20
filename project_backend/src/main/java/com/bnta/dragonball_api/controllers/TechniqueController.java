@@ -76,15 +76,9 @@ public class TechniqueController {
 
     //POST
     @PostMapping // localhost:8080/techniques
-    public ResponseEntity<Technique> createTechnique(@RequestBody Technique newTechnique) throws Exception{
-        Long id = newTechnique.getId();
-        Optional<Technique> technique = techniqueRepository.findById(id);
-        if(technique.isEmpty()) {
+    public ResponseEntity<Technique> createTechnique(@RequestBody Technique newTechnique){
             techniqueRepository.save(newTechnique);
             return new ResponseEntity<>(newTechnique, HttpStatus.CREATED);
-        } else {
-            throw new Exception("Technique with id: " + id + " already exists");
-        }
     }
 
     //DELETE

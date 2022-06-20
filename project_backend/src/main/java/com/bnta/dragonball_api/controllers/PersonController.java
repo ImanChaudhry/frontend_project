@@ -342,15 +342,9 @@ public class PersonController {
 
     //POST
     @PostMapping // localhost:8080/persons
-    public ResponseEntity<Person> createPerson(@RequestBody Person newPerson) throws Exception{
-        Long id = newPerson.getId();
-        Optional<Person> person = personRepository.findById(id);
-        if(person.isEmpty()) {
+    public ResponseEntity<Person> createPerson(@RequestBody Person newPerson){
             personRepository.save(newPerson);
             return new ResponseEntity<>(newPerson, HttpStatus.CREATED);
-        } else {
-            throw new Exception("Person with id: " + id + " already exists");
-        }
     }
 
     //DELETE

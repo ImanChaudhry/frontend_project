@@ -181,15 +181,9 @@ public class SagaController {
 
     //POST
     @PostMapping // localhost:8080/sagas
-    public ResponseEntity<Saga> createSaga(@RequestBody Saga newSaga) throws Exception{
-        Long id = newSaga.getId();
-        Optional<Saga> saga = sagaRepository.findById(id);
-        if(saga.isEmpty()) {
+    public ResponseEntity<Saga> createSaga(@RequestBody Saga newSaga){
             sagaRepository.save(newSaga);
             return new ResponseEntity<>(newSaga, HttpStatus.CREATED);
-        } else {
-            throw new Exception("Saga with id: " + id + " already exists");
-        }
     }
 
     //DELETE
