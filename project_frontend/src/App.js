@@ -13,6 +13,7 @@ import Techniques from './components/Techniques';
 import { Fragment } from 'react';
 import ScrollButton from './components/ScrollButton';
 import { Content, Heading } from './components/ScrollButtonStyles';
+import SearchBar from './components/SearchBar';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <li><Link to='/saga'>Sagas</Link></li>
         <li><Link to='/techniques'>Techniques</Link></li>
       </ul>
+      <SearchBar />
       <Routes className="nav-options">
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
@@ -35,6 +37,7 @@ function App() {
         <Route path='/saga' element={<Saga/>} />
         <Route path='/techniques' element={<Techniques/>} />
       </Routes>
+   
       </div>
     </Router>
 
