@@ -46,11 +46,6 @@ function App() {
       </div>
     </Router>
 
-    <HomeContainer />
-    <AboutContainer />
-    <CharacterContainer />
-    <SagaContainer />
-    <TechniquesContainer />
     <Content />
     <ScrollButton />
     </>
