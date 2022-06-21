@@ -2,6 +2,7 @@ import React from "react";
 import { useEffect, useState } from "react";
 import CharacterList from "../components/characters/CharacterList";
 
+
 const CharacterContainer = () => {
 
   const [characters, setCharacters] = useState([]);
@@ -14,8 +15,7 @@ const CharacterContainer = () => {
 
   return (
     <>
-    <h1>Hello World from CharacterContainer!</h1>
-    <CharacterList characters={characters} />
+      <CharacterList characters={characters} />
     </>
   );
 }

@@ -1,9 +1,8 @@
-import React from "react";
+import React from 'react'
 
-function About() {
+const About = () => {
     return (
         <>
-
             <h2>About Page</h2>
             <img src="/images/Logo.jpg" alt="Dragon ball team"></img>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -20,4 +19,4 @@ function About() {
     )
 }
 
-export default About;
+export default About

@@ -1,15 +1,15 @@
-import React from "react";
+import React from 'react'
 import ImageSlider from "./ui/ImageSlider";
-import {SliderData} from './ui/SliderData'
+import { SliderData } from './ui/SliderData'
 
-function Home() {
 
+const Home = () => {
     return (
         <>
             <h2>Home Page</h2>
-            <ImageSlider slides={SliderData}/>
+            <ImageSlider slides={SliderData} />
         </>
     )
 }
 
-export default Home;
+export default Home
