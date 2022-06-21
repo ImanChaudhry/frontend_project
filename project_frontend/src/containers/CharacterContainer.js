@@ -9,17 +9,24 @@ const CharacterContainer = () => {
   const [characters, setCharacters] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:8080/persons")
+      fetch("http://localhost:8080/persons")
       .then(response => response.json())
       .then(data => setCharacters(data))
   }, []);
 
-  
+  const [sagas, setSagas] = useState([]);
+
+    useEffect(() => {
+        fetch("http://localhost:8080/sagas")
+        .then(response => response.json())
+        .then(data => setSagas(data))
+    }, []);
+
   const postCharacter = (newCharacter) => {
     fetch("http://localhost:8080/persons",
       {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {"Content-Type": "application/json"},
         body: JSON.stringify(newCharacter)
       })
       .then(response => response.json())
@@ -28,10 +35,13 @@ const CharacterContainer = () => {
 
   return (
     <>
-      <NewCharacterForm postCharacter={postCharacter} />
-      <CharacterList characters={characters} />
+      <NewCharacterForm
+        sagas={sagas}
+        postCharacter={postCharacter} />
+      <CharacterList
+        characters={characters} />
     </>
-  );
+  )
 }
 
 export default CharacterContainer;

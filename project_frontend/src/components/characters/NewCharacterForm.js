@@ -1,16 +1,21 @@
 import React from 'react'
 import { useState } from "react"
 
-const NewCharacterForm = ({ postCharacter }) => {
+const NewCharacterForm = ({ sagas, postCharacter }) => {
+
+    const sagaOptions = sagas.map((saga) => {
+        return <option key={saga.id} value={saga.id}> {saga.name}</option>
+    });
 
     const[stateCharacter, setStateCharacter] = useState(
         {
             name: "",
             age: 0,
             race: "",
-            series: ""
-            // saga: "",
-            // techniques: ""
+            series: "",
+            planet: "",
+            saga: null,
+            techniques: ""
 
         }
     )
@@ -23,8 +28,17 @@ const NewCharacterForm = ({ postCharacter }) => {
         setStateCharacter(copiedCharacter);
     }
 
+    const handleSaga = (event) => {
+        const sagaId =  parseInt(event.target.value);
+        const selectedSaga = sagas.find(saga => saga.id === sagaId)
+        let copiedCharacter = {...stateCharacter};
+        copiedCharacter.saga = selectedSaga;
+        setStateCharacter(copiedCharacter);
+    }
+
     const handleFormSubmit = (event) => {
         event.preventDefault();
+        // console.log(stateCharacter);
         postCharacter(stateCharacter);
     }
 
@@ -66,13 +80,24 @@ const NewCharacterForm = ({ postCharacter }) => {
                 value={stateCharacter.series}
             /><br />
 
-            {/* <input
+                <input
                 type="text"
-                placeholder="Saga"
-                name="saga"
+                placeholder="Planet"
+                name="planet"
                 onChange={handleChange}
-                value={stateCharacter.saga}
-            /><br />
+                value={stateCharacter.planet}
+                /><br />
+
+            <select
+                type="text"
+                // placeholder="Saga"
+                // name="saga"
+                onChange={handleSaga}>
+                {/* // value={stateCharacter.saga} */}
+                <option>Select a Saga</option>
+                {sagaOptions}
+            </select>
+            <br />
 
             <input
                 type="text"
@@ -80,7 +105,7 @@ const NewCharacterForm = ({ postCharacter }) => {
                 name="techniques"
                 onChange={handleChange}
                 value={stateCharacter.techniques}
-            /><br /> */}
+            /><br />
             
             <button type='submit'>Add</button>
         </form>
