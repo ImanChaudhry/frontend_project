@@ -1,5 +1,5 @@
 import React from "react";
-import CharacterContainer from "../../containers/CharacterContainer";
+// import CharacterContainer from '../../containers/CharacterContainer';
 
 const Character = ({character}) => {
 
@@ -15,7 +15,6 @@ const Character = ({character}) => {
             <ul>
                 {character.techniques.map((technique, index) => <li key={index}>{technique.name}</li>)}
             </ul>
-        <CharacterContainer />
         </div>
         
     );

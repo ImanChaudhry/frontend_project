@@ -7,13 +7,13 @@ import SearchBar from './components/ui/SearchBar';
 
 import Home from './components/Home';
 import About from './components/About';
-import Character from './components/characters/Character';
-import Saga from './components/sagas/Saga';
-import Techniques from './components/techniques/Techniques';
+// import Character from './components/characters/Character';
+// import Saga from './components/sagas/Saga';
+// import Techniques from './components/techniques/Techniques';
 
-// import CharacterContainer from './containers/CharacterContainer';
-// import SagaContainer from './containers/SagaContainer';
-// import TechniquesContainer from './containers/TechniquesContainer';
+import CharacterContainer from './containers/CharacterContainer';
+import SagaContainer from './containers/SagaContainer';
+import TechniquesContainer from './containers/TechniquesContainer';
 
 
 function App() {
@@ -37,17 +37,14 @@ function App() {
           <Routes className="nav-options">
               <Route path='/' element={<Home />} />
               <Route path='/about' element={<About />} />
-              <Route path='/characters' element={<Character />} />
-              <Route path='/sagas' element={<Saga />} />
-              <Route path='/techniques' element={<Techniques />} />
+              <Route path='/characters' element={<CharacterContainer />} />
+              <Route path='/sagas' element={<SagaContainer />} />
+              <Route path='/techniques' element={<TechniquesContainer />} />
           </Routes>
 
         </div>
       </Router>
 
-      {/* <CharacterContainer />
-    <SagaContainer />
-    <TechniquesContainer /> */}
       <Content />
       <ScrollButton />
     </>
