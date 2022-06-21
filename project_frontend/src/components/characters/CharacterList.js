@@ -7,7 +7,7 @@ const CharacterList = ({characters}) => {
     const characterComponents = characters.map(character => {
         return <Character
                     key={character.id}
-                    character={character}/>
+                    character={character} />
     });
 
     
