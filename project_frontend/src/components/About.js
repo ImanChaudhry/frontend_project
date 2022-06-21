@@ -5,7 +5,7 @@ function About() {
         <>
 
             <h2>About Page</h2>
-            <img src="/images/Logo.jpg" alt="About page image"></img>
+            <img src="/images/Logo.jpg" alt="Dragon ball team"></img>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Integer eget tellus eu lorem pellentesque efficitur.
                 Nunc congue dui arcu, ac vulputate dui tempus vel.

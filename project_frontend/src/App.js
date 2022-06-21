@@ -1,26 +1,22 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import HomeContainer from './containers/HomeContainer';
-import AboutContainer from './containers/AboutContainer';
-import CharacterContainer from './containers/CharacterContainer';
-import SagaContainer from './containers/SagaContainer';
-import TechniquesContainer from './containers/TechniquesContainer';
 import Home from './components/Home';
 import About from './components/About';
-import Character from './components/Character';
+
 import Saga from './components/Saga';
 import Techniques from './components/Techniques';
 import { Fragment } from 'react';
-import ScrollButton from './components/ScrollButton';
-import { Content, Heading } from './components/ScrollButtonStyles';
-import SearchBar from './components/SearchBar';
+import ScrollButton from './components/ui/ScrollButton';
+import { Content, Heading } from './components/ui/ScrollButtonStyles';
+import SearchBar from './components/ui/SearchBar';
+import CharacterContainer from './containers/CharacterContainer';
 
 
 function App() {
   return (
     <>
 
-<Router>
+    <Router>
     <div className="App">
       
       <div className='navbar'>
@@ -38,7 +34,7 @@ function App() {
       <Routes className="nav-options">
         <Route path='/' element={<Home/>} />
         <Route path='/about' element={<About/>} />
-        <Route path='/character' element={<Character/>} />
+
         <Route path='/saga' element={<Saga/>} />
         <Route path='/techniques' element={<Techniques/>} />
       </Routes>
@@ -46,6 +42,7 @@ function App() {
       </div>
     </Router>
 
+    <CharacterContainer />
     <Content />
     <ScrollButton />
     </>
