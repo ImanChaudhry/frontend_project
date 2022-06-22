@@ -7,8 +7,8 @@ const ImageSlider = ({ slides }) => {
   const length = slides.length;
 
   const autoScroll = true;
-  let slideInterval;
-  let intervalTime = 5000;
+  // let slideInterval;
+  // let intervalTime = 5000;
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1)
@@ -19,7 +19,7 @@ const ImageSlider = ({ slides }) => {
   }
 
   function auto() {
-    slideInterval = setInterval(nextSlide, intervalTime)
+    // slideInterval = setInterval(nextSlide, intervalTime)
   } 
 
   useEffect (() => {
@@ -55,4 +55,4 @@ const ImageSlider = ({ slides }) => {
   )
 }
 
-export default ImageSlider
+export default ImageSlider;

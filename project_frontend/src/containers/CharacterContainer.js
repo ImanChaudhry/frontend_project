@@ -22,6 +22,14 @@ const CharacterContainer = () => {
         .then(data => setSagas(data))
     }, []);
 
+    const [techniques, setTechniques] = useState([]);
+
+    useEffect(() => {
+        fetch("http://localhost:8080/techniques")
+        .then(response => response.json())
+        .then(data => setTechniques(data))
+    }, []);
+
   const postCharacter = (newCharacter) => {
     fetch("http://localhost:8080/persons",
       {
@@ -33,10 +41,24 @@ const CharacterContainer = () => {
       .then(saveCharacter => setCharacters([...characters, saveCharacter]))
   }
 
+  /* Iman - wrote delete
+  
+  const deleteCharacter = (id, name, etc.) => {
+
+    fetch("url" + id + name, {
+      method: "DELETE",
+      headers: {"Content-Type": "application/json"}
+    })
+    setCharacters(character.filter(character => character.id !== id))
+  }
+  
+  */
+
   return (
     <>
       <NewCharacterForm
         sagas={sagas}
+        techniques={techniques}
         postCharacter={postCharacter} />
       <CharacterList
         characters={characters} />

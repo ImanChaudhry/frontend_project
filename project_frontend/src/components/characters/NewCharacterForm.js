@@ -1,10 +1,14 @@
 import React from 'react'
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
-const NewCharacterForm = ({ sagas, postCharacter }) => {
+const NewCharacterForm = ({ sagas, techniques, postCharacter }) => {
 
     const sagaOptions = sagas.map((saga) => {
         return <option key={saga.id} value={saga.id}> {saga.name}</option>
+    });
+
+    const techniqueOptions = techniques.map((technique) => {
+        return <option key={technique.id} value={technique.id}> {technique.name}, {technique.type} </option>
     });
 
     const[stateCharacter, setStateCharacter] = useState(
@@ -15,10 +19,41 @@ const NewCharacterForm = ({ sagas, postCharacter }) => {
             series: "",
             planet: "",
             saga: null,
-            techniques: ""
-
+            techniques: [],
         }
     )
+
+    const [newSeries, setNewSeries] = useState("");
+
+    const handleSeries = (event) => {
+        let selectedSeries = event.target.value;
+        setNewSeries(selectedSeries);
+        let copiedCharacter = {...stateCharacter};
+        copiedCharacter.series = selectedSeries
+        setStateCharacter(copiedCharacter);
+    }
+
+    const handleTechnique = (event) => {
+        const techniqueId =  parseInt(event.target.value);
+        console.log(techniqueId);
+        const selectedTechnique = techniques.find(technique => technique.id === techniqueId)
+        //let copiedCharacter = {...stateCharacter}; //Creates a shallow copy
+        //copiedCharacter.techniques = selectedTechnique;
+        //setStateCharacter(copiedCharacter);
+        setStateCharacter((prev) => {
+            // console.log(selectedTechnique);
+            // debugger;
+            prev.techniques.push(selectedTechnique);
+            return prev;
+        });
+       // console.log(copiedCharacter.techniques);
+        // console.log(stateCharacter)
+        //debugger;
+    }
+
+    useEffect(() => {
+        console.log(stateCharacter);
+    }, [stateCharacter])
 
     const handleChange = (event) => {
         console.log(event);
@@ -34,12 +69,14 @@ const NewCharacterForm = ({ sagas, postCharacter }) => {
         let copiedCharacter = {...stateCharacter};
         copiedCharacter.saga = selectedSaga;
         setStateCharacter(copiedCharacter);
-    }
+        }
+
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
         // console.log(stateCharacter);
         postCharacter(stateCharacter);
+        // window.location.reload();
     }
 
 
@@ -72,21 +109,26 @@ const NewCharacterForm = ({ sagas, postCharacter }) => {
                 value={stateCharacter.race}
             /><br />
 
-            <input
+            <select type="text" value={newSeries} onChange={handleSeries}>
+                <option value="DragonBall">DragonBall</option>
+                <option value="DragonBall_Z">DragonBall_Z</option>
+            </select><br/>
+
+            {/* <input
                 type="text"
                 placeholder="Series"
                 name="series"
                 onChange={handleChange}
                 value={stateCharacter.series}
-            /><br />
+            /><br /> */}
 
-                <input
+            <input
                 type="text"
                 placeholder="Planet"
                 name="planet"
                 onChange={handleChange}
                 value={stateCharacter.planet}
-                /><br />
+            /><br />
 
             <select
                 type="text"
@@ -99,14 +141,21 @@ const NewCharacterForm = ({ sagas, postCharacter }) => {
             </select>
             <br />
 
-            <input
+            <select
+                type="text"
+                onChange={handleTechnique}>
+                    <option>Select a Technique</option>
+                    {techniqueOptions}
+                </select>
+                <br />
+
+            {/* <input
                 type="text"
                 placeholder="Techniques"
                 name="techniques"
                 onChange={handleChange}
                 value={stateCharacter.techniques}
-            /><br />
-            
+            /><br /> */}
             <button type='submit'>Add</button>
         </form>
     )
