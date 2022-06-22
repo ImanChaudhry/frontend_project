@@ -156,7 +156,7 @@ const NewCharacterForm = ({ sagas, techniques, postCharacter }) => {
                 onChange={handleChange}
                 value={stateCharacter.techniques}
             /><br /> */}
-            <button type='submit'>Add</button>
+            <button type="submit">Add</button>
         </form>
     )
 }
