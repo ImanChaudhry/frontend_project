@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import { Fragment } from 'react';
 import ScrollButton from './components/ui/ScrollButton';
 import { Content, Heading } from './components/ui/ScrollButtonStyles';
-import SearchBar from './components/ui/SearchBar';
+
 
 import Home from './components/Home';
 import About from './components/About';
@@ -33,7 +33,6 @@ function App() {
             </ul>
           </div>
 
-          <SearchBar />
           <Routes className="nav-options">
               <Route path='/' element={<Home />} />
               <Route path='/about' element={<About />} />
