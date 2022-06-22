@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "react-icons": "^4.4.0",
     "styled-icons": "^10.45.0"
   }
 }

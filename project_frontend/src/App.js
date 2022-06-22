@@ -21,10 +21,10 @@ function App() {
     <>
       <Router>
         <div className="App">
-          <img className="logo-container" src="images/logo2.png" alt="Three of Might logo" size="400x400" />
 
           <div className='navbar'>
-            <ul>
+           <img className="logo-container" src="images/logo2.png" alt="Three of Might logo" size="400x400" />
+            <ul className='nav-container'>
               <li><Link to='/'>Home</Link></li>
               <li><Link to='/about'>About</Link></li>
               <li><Link to='/characters'>Characters</Link></li>

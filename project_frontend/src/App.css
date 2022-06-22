@@ -16,8 +16,8 @@ body {
 
 .logo-container {
 /* display: block; */
-position: fixed;
-position: inherit;
+/* position: fixed; */
+/* position: inherit; */
 width: 15%;
 
 /* display: flex;
@@ -26,13 +26,16 @@ justify-content: space-between; */
 }
 
 .navbar {
-  display: inline-block;
-  width: 100%;
-  overflow: hidden;
   /* position: fixed; */
-  padding: 50px 0;
+  display: flex;
+  /* flex-direction: row; */
+  /* width: 100%; */
+  /* overflow: hidden; */
+  /* position: fixed; */
+  padding: 0.5rem calc((50vw - 1000px)/2);
+  z-index: 10;
+  
   /* box-shadow: 0px 5px 0px #dedede; */
-  color: #F29F05;
 }
 
 .navbar a {
@@ -47,17 +50,22 @@ justify-content: space-between; */
 }
 
 .navbar ul {
-  display: flex;
+  /* display: block; */
   flex-direction: row;
-  justify-content: space-between;
+  /* position: fixed; */
+  justify-content:space-between;
   padding-top: 2%;
 }
 
-.App ul {
+.nav-container {
+  text-align: end;
+}
+
+/* .App ul {
   display: flex;
   justify-content: space-around;
-  border-style: solid;
-}
+  /* border-style: solid; */
+
 
 .App ul li {
   list-style: none;
@@ -79,12 +87,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding-top: 100px;
+
 }
 
 .image {
-  width: 1000px;
-  height: 600px;
-  border-radius: 10px;
+  width: 250px;
+  /* border-radius: 10px; */
 }
 
 .right-arrow{
@@ -124,4 +133,81 @@ body {
   color: black;
   animation: slide-right 1s ease .5s;
   animation-fill-mode: forwards;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.card {
+  cursor: pointer;
+  background-color: transparent;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.card h1 {
+  font-size: 25px;
+  border-bottom: 1px #fff solid;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-back {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  transform: rotateY(180deg);
+}
+
+.card li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+  .card img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+  }
+  
 }
