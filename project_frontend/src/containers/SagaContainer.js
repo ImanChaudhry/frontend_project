@@ -32,13 +32,23 @@ const SagaContainer = () => {
       .then(saveSaga => setSagas([...sagas, saveSaga]))
   }
 
+  const deleteSaga = (id) => {
+    fetch("http://localhost:8080/sagas/" + id, {
+      method: "DELETE",
+      headers: { "Content-Type": "application/json" }
+    })
+    setSagas(sagas.filter(saga => saga.id !== id))
+  }
+
   return (
     <>
       <NewSagaForm
         characters={characters}
         postSaga={postSaga}
       />
-      <SagaList sagas={sagas} />
+      <SagaList
+        sagas={sagas}
+        deleteSaga={deleteSaga} />
     </>
   );
 }

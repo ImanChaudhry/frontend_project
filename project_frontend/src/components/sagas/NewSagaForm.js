@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState, useEffect } from "react"
+import { useState } from "react"
 
 const NewSagaForm = ({postSaga, characters }) => {
 
@@ -17,23 +17,23 @@ const NewSagaForm = ({postSaga, characters }) => {
         }
     )
 
-    const handleCharacters= (event) => {
-        const characterId =  parseInt(event.target.value);
-        console.log(characterId);
-        const selectedCharacter = characters.find(character => character.id === characterId)
-        setStateSaga((prev) => {
-            console.log(setStateSaga)
-            // debugger;
-            prev.characters.push(selectedCharacter);
-            return prev;
-        });
+    // const handleCharacters= (event) => {
+    //     const characterId =  parseInt(event.target.value);
+    //     console.log(characterId);
+    //     const selectedCharacter = characters.find(character => character.id === characterId)
+    //     setStateSaga((prev) => {
+    //         console.log(setStateSaga)
+    //         // debugger;
+    //         prev.characters.push(selectedCharacter);
+    //         return prev;
+    //     });
 
         // const characterId =  parseInt(event.target.value);
         // const selectedCharacter = characters.find(character => character.id === characterId)
         // let copiedSaga = {...stateSaga};
         // copiedSaga.characters = selectedCharacter;
         // setStateSaga(copiedSaga);
-    }
+    // }
 
     // useEffect(() => {
     //     console.log(stateSaga);

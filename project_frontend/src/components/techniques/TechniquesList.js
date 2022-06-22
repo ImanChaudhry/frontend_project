@@ -1,12 +1,13 @@
 import React from "react";
 import Techniques from "./Techniques";
 
-const TechniquesList = ({techniques}) => {
+const TechniquesList = ({techniques, deleteTechnique}) => {
 
     const techniqueComponents = techniques.map(technique => {
         return <Techniques
                   key={technique.id}
-                  technique={technique} />
+                  technique={technique}
+                  deleteTechnique={deleteTechnique} />
     });
 
     return (

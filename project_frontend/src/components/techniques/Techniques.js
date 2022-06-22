@@ -1,6 +1,11 @@
 import React from "react";
 
-const Techniques = ({ technique }) => {
+const Techniques = ({ technique, deleteTechnique }) => {
+
+  const handleDeleteTechnique = () => {
+    deleteTechnique(technique.id)
+  }
+
   return (
     <>
       <h3>{technique.name}</h3>
@@ -9,6 +14,7 @@ const Techniques = ({ technique }) => {
       <ul>
       {technique.persons.map((person, index) => <li key={index}>{person.name}</li>)}
       </ul>
+      <button onClick={handleDeleteTechnique}>Delete!</button>
     </>
 
   )

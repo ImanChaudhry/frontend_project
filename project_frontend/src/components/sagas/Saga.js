@@ -1,7 +1,10 @@
 import React from "react";
 
-const Saga = ({ saga }) => {
+const Saga = ({ saga, deleteSaga }) => {
 
+  const handleDeleteSaga = () => {
+    deleteSaga(saga.id);
+  }
   return (
     <>
      <h3>{saga.name}</h3>
@@ -12,6 +15,7 @@ const Saga = ({ saga }) => {
       <ul>
         {saga.persons.map((person, index) => <li key={index}>{person.name}</li>)}
   </ul>
+  <button onClick={handleDeleteSaga}>Delete!</button>
     </>
 
   )

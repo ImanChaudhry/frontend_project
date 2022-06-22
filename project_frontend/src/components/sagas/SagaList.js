@@ -1,12 +1,13 @@
 import React from 'react'
 import Saga from "./Saga"
 
-const SagaList = ({sagas}) => {
+const SagaList = ({sagas, deleteSaga}) => {
     
     const sagaComponents = sagas.map(saga => {
         return <Saga
                     key={saga.id}
-                    saga={saga}/>
+                    saga={saga}
+                    deleteSaga={deleteSaga}/>
     });
 
     
