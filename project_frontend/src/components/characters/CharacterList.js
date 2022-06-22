@@ -2,12 +2,13 @@ import React from "react";
 import Character from "./Character";
 
 
-const CharacterList = ({characters}) => {
+const CharacterList = ({characters, deleteCharacter}) => {
     
     const characterComponents = characters.map(character => {
         return <Character
                     key={character.id}
-                    character={character} />
+                    character={character}
+                    deleteCharacter={deleteCharacter}/>
     });
 
     

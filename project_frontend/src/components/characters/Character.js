@@ -1,7 +1,11 @@
 import React from "react";
 // import CharacterContainer from '../../containers/CharacterContainer';
 
-const Character = ({character}) => {
+const Character = ({character, deleteCharacter}) => {
+
+    const handleDeleteCharacter = () => {
+        deleteCharacter(character.id);
+    }
 
     return (
         <div>
@@ -15,6 +19,7 @@ const Character = ({character}) => {
             <ul>
                 {character.techniques.map((technique, index) => <li key={index}>{technique.name}</li>)}
             </ul>
+            <button onClick={handleDeleteCharacter}>Delete!</button>
         </div>
         
     );

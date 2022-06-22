@@ -41,18 +41,15 @@ const CharacterContainer = () => {
       .then(saveCharacter => setCharacters([...characters, saveCharacter]))
   }
 
-  /* Iman - wrote delete
-  
-  const deleteCharacter = (id, name, etc.) => {
 
-    fetch("url" + id + name, {
+  const deleteCharacter = (id) => {
+    fetch("http://localhost:8080/persons/" + id, {
       method: "DELETE",
       headers: {"Content-Type": "application/json"}
     })
-    setCharacters(character.filter(character => character.id !== id))
+    setCharacters(characters.filter(character => character.id !== id))
   }
   
-  */
 
   return (
     <>
@@ -61,7 +58,8 @@ const CharacterContainer = () => {
         techniques={techniques}
         postCharacter={postCharacter} />
       <CharacterList
-        characters={characters} />
+        characters={characters}
+        deleteCharacter={deleteCharacter} />
     </>
   )
 }

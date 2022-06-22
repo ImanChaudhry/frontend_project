@@ -3,9 +3,9 @@ import { useState, useEffect } from "react"
 
 const NewSagaForm = ({postSaga, characters }) => {
 
-    const characterOptions = characters.map((character) => {
-        return <option key={character.id} value={character.id}> {character.name}, {character.race} </option>
-    });
+    // const characterOptions = characters.map((character) => {
+    //     return <option key={character.id} value={character.id}> {character.name}, {character.race} </option>
+    // });
 
     const [stateSaga, setStateSaga] = useState(
         {
@@ -13,7 +13,7 @@ const NewSagaForm = ({postSaga, characters }) => {
             series: "",
             episodes: "",
             releaseDate: "",
-            characters: []
+            // characters: []
         }
     )
 
@@ -35,9 +35,9 @@ const NewSagaForm = ({postSaga, characters }) => {
         // setStateSaga(copiedSaga);
     }
 
-    useEffect(() => {
-        console.log(stateSaga);
-    }, [stateSaga])
+    // useEffect(() => {
+    //     console.log(stateSaga);
+    // }, [stateSaga])
 
     const [newSeries, setNewSeries] = useState("");
 
@@ -80,7 +80,7 @@ const NewSagaForm = ({postSaga, characters }) => {
 
             <select type="text" value={newSeries} onChange={handleSeries}>
                 <option value="DragonBall">DragonBall</option>
-                <option value="DragonBall_Z">DragonBall_Z</option>
+                <option value="DragonBall_Z">DragonBall Z</option>
             </select><br />
 
 
@@ -101,12 +101,12 @@ const NewSagaForm = ({postSaga, characters }) => {
                 value={stateSaga.releaseDate}
             /><br />
 
-            <select
+            {/* <select
                 type="text"
                 onChange={handleCharacters}>
                 <option>Select a Character</option>
                 {characterOptions}
-            </select>
+            </select> */}
             <br />
             <button type='submit'>Add</button>
         </form>
