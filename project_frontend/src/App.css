@@ -1,13 +1,12 @@
-.App {
-  /* text-align: center;
+/* .App {
+  text-align: center;
   z-index: 1;
   width: 100%;
   height: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  cursor: url(resized_yellow_cursor.png) */
-}
+  /* cursor: url(resized_yellow_cursor.png) }*/
 
 body {
   padding: 0%;
@@ -15,10 +14,10 @@ body {
 }
 
 .logo-container {
-/* display: block; */
+display: block;
 /* position: fixed; */
 /* position: inherit; */
-width: 15%;
+width: 10%;
 
 /* display: flex;
 flex-direction: row;
@@ -27,11 +26,10 @@ justify-content: space-between; */
 
 .navbar {
   /* position: fixed; */
-  display: flex;
-  /* flex-direction: row; */
+  /* display: flexbox; */
+  flex-direction: row;
   /* width: 100%; */
   /* overflow: hidden; */
-  /* position: fixed; */
   padding: 0.5rem calc((50vw - 1000px)/2);
   z-index: 10;
   
@@ -51,14 +49,14 @@ justify-content: space-between; */
 
 .navbar ul {
   /* display: block; */
-  flex-direction: row;
+  flex-direction: column;
   /* position: fixed; */
-  justify-content:space-between;
+  justify-content: center;
   padding-top: 2%;
 }
 
 .nav-container {
-  text-align: end;
+  /* text-align: end; */
 }
 
 /* .App ul {
@@ -209,5 +207,5 @@ body {
     height: 300px;
     object-fit: contain;
   }
-  
+
 }
