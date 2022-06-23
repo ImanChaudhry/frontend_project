@@ -465,7 +465,7 @@ public class Dataloader implements ApplicationRunner {
 //                "Human", cellSaga, Arrays.asList()); //already_used
 
         Person trunksCellSaga = new Person(Series.DragonBall_Z, "Trunks", 1, "Earth",
-                "Saiyan/Human", cellSaga, Arrays.asList());
+                "Saiyan/Human", cellSaga, "https://dragonball.guru/wp-content/uploads/2021/03/Trunks-Profile-Pic.png", Arrays.asList());
 
         //Majin Buu Saga
 //        Person gokuMajinBuuSaga = new Person(Series.DragonBall_Z, "Goku", 37, "Planet Vegeta",
