@@ -44,7 +44,7 @@ const SagaContainer = () => {
 
   return (
     <>
-      <h1>Dragon Ball Z Saga List</h1>
+      <h1>Saga Cards</h1>
       <hr />
       <Search getQuery={(q) => setQuery(q)} /><br /> <br />
       <SagaList

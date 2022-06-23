@@ -54,7 +54,7 @@ const CharacterContainer = () => {
 
   return (
     <>
-      <h1>Dragon Ball Z Character List</h1>
+      <h1>Character Cards</h1>
       <hr />
       <Search getQuery={(q) => setQuery(q)} /><br /> <br/>
       <CharacterList

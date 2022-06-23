@@ -44,7 +44,7 @@ const TechniquesContainer = () => {
 
   return (
     <>
-      <h1>Dragon Ball Z Technique List</h1>
+      <h1>Technique Cards</h1>
       <hr />
       <Search getQuery={(q) => setQuery(q)} /><br /> <br/>
       <TechniquesList
