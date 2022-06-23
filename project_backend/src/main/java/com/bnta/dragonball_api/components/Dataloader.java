@@ -37,7 +37,7 @@ public class Dataloader implements ApplicationRunner {
 //        Saga redRibbonArmySaga = new Saga("Red Ribbon Army Saga", Series.DragonBall, "29 - 83",
 //                LocalDate.of(2002, 2, 11));
 
-        Saga piccoloSaga = new Saga("Piccolo Saga", Series.DragonBall, "84 - 153",
+        Saga piccoloSaga = new Saga("Piccolo Saga", Series.DragonBall, "84 - 153","https://dragonball.guru/wp-content/uploads/2021/03/Piccolo-Profile-Pic-300x300.png",
                 LocalDate.of(2002, 12, 5));
 
         // Dragon ball Z sagas
