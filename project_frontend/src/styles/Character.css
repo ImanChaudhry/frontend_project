@@ -95,7 +95,7 @@
     /* background-image: url('https://i.pinimg.com/originals/8a/e8/9a/8ae89a90e576104183339ca5f042757e.jpg'); */
     /* background-position: center; */
     /* background-color: #F29F05; */
-    background-color: #F2BC1B;
+    background-color: #F2CB05;
   }
   
   .card-back {
@@ -105,7 +105,7 @@
     transform: rotateY(180deg);
     /* background-color: #D90452; */
     /* background-color: #F2BC1B; */
-    background-color: #F29F05;
+    background-color: #F29f05;
     /* background-color: #BC0D35; */
   }
   
@@ -126,7 +126,7 @@
   .delete-btn {
     border: none;
     /* background-color: #F2BC1B; */
-    background-color: #F29F05;
+    background-color: #F29f05;
     /* background-color: #D90452; */
     cursor:auto;
     font-size: 7.5px;
