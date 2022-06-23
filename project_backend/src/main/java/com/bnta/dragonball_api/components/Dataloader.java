@@ -31,7 +31,7 @@ public class Dataloader implements ApplicationRunner {
         // Comment TO REMOVE
 
         //Dragon ball sagas
-        Saga sonGokuSaga = new Saga("Son Goku Saga", Series.DragonBall, "1 - 28",
+        Saga sonGokuSaga = new Saga("Son Goku Saga", Series.DragonBall, "1 - 28", "https://dragonball.guru/wp-content/uploads/2021/03/goku-profile-e1616173641804.png",
                 LocalDate.of(2001, 8, 20));
 
 //        Saga redRibbonArmySaga = new Saga("Red Ribbon Army Saga", Series.DragonBall, "29 - 83",
