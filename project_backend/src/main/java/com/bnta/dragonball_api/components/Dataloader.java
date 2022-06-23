@@ -438,7 +438,7 @@ public class Dataloader implements ApplicationRunner {
 //                "Saiyan", cellSaga, Arrays.asList(instantTransmission, SSJ1, kamehameha, afterImage)); //already_used
 
         Person android18 = new Person(Series.DragonBall_Z, "Android 18", 3, "Earth",
-                "Android", cellSaga, Arrays.asList(powerBlitz));
+                "Android", cellSaga, "https://dragonball.guru/wp-content/uploads/2021/03/android-18-profile-pic.png", Arrays.asList(powerBlitz));
 
         Person android17 = new Person(Series.DragonBall_Z, "Android 17", 3, "Earth",
                 "Android", cellSaga, Arrays.asList(hellBreaker, powerBlitz));
