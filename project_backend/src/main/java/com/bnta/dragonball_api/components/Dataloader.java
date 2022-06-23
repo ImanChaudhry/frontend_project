@@ -41,11 +41,11 @@ public class Dataloader implements ApplicationRunner {
                 LocalDate.of(2002, 12, 5));
 
         // Dragon ball Z sagas
-        Saga saiyanSaga = new Saga("Saiyan Saga", Series.DragonBall_Z,"1 - 35","https://toppng.com/uploads/preview/oku-and-vegeta-saiyan-saga-dragon-ball-z-goku-11563159353grvhllonaq.png",
+        Saga saiyanSaga = new Saga("Saiyan Saga", Series.DragonBall_Z,"1 - 35","https://image.pngaaa.com/327/2570327-middle.png",
                 LocalDate.of(1996,9,13));
 
 
-        Saga friezaSaga = new Saga("Frieza Saga", Series.DragonBall_Z, "36 - 117", "https://dragonball.guru/wp-content/uploads/2021/03/frieza-profile-e1616174138632.png ",
+        Saga friezaSaga = new Saga("Frieza Saga", Series.DragonBall_Z, "36 - 117", "https://dragonball.guru/wp-content/uploads/2022/06/Zeno-Profile-Pic-300x300.png",
                 LocalDate.of(1997,9,13));
 
 

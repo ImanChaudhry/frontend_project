@@ -2875,3 +2875,12 @@ org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (
 	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
 	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:114)
 	at java.base/java.lang.Thread.run(Thread.java:833)
+2022-06-23 12:56:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "IMAGE CHARACTER VARYING(255)": "'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83... (562)"; SQL statement:
+insert into sagas (id, episodes, image, name, release_date, series) values (default, ?, ?, ?, ?, ?) [22001-212]
+2022-06-23 12:58:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "IMAGE CHARACTER VARYING(255)": "'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83... (562)"; SQL statement:
+insert into sagas (id, episodes, image, name, release_date, series) values (default, ?, ?, ?, ?, ?) [22001-212]
+2022-06-23 12:58:30 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLDataException: Value too long for column "IMAGE CHARACTER VARYING(255)": "'https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/84dc13b7-a2e7-4b45-83... (562)"; SQL statement:
+insert into sagas (id, episodes, image, name, release_date, series) values (default, ?, ?, ?, ?, ?) [22001-212]
