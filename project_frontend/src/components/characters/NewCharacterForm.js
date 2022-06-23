@@ -11,7 +11,7 @@ const NewCharacterForm = ({ sagas, techniques, postCharacter }) => {
         return <option key={technique.id} value={technique.id}> {technique.name}, {technique.type} </option>
     });
 
-    const[stateCharacter, setStateCharacter] = useState(
+    const [stateCharacter, setStateCharacter] = useState(
         {
             name: "",
             age: 0,
@@ -28,13 +28,13 @@ const NewCharacterForm = ({ sagas, techniques, postCharacter }) => {
     const handleSeries = (event) => {
         let selectedSeries = event.target.value;
         setNewSeries(selectedSeries);
-        let copiedCharacter = {...stateCharacter};
+        let copiedCharacter = { ...stateCharacter };
         copiedCharacter.series = selectedSeries
         setStateCharacter(copiedCharacter);
     }
 
     const handleTechnique = (event) => {
-        const techniqueId =  parseInt(event.target.value);
+        const techniqueId = parseInt(event.target.value);
         console.log(techniqueId);
         const selectedTechnique = techniques.find(technique => technique.id === techniqueId)
         //let copiedCharacter = {...stateCharacter}; //Creates a shallow copy
@@ -46,7 +46,7 @@ const NewCharacterForm = ({ sagas, techniques, postCharacter }) => {
             prev.techniques.push(selectedTechnique);
             return prev;
         });
-       // console.log(copiedCharacter.techniques);
+        // console.log(copiedCharacter.techniques);
         // console.log(stateCharacter)
         //debugger;
     }
@@ -58,18 +58,18 @@ const NewCharacterForm = ({ sagas, techniques, postCharacter }) => {
     const handleChange = (event) => {
         console.log(event);
         let propertyName = event.target.name;
-        let copiedCharacter = {...stateCharacter};
+        let copiedCharacter = { ...stateCharacter };
         copiedCharacter[propertyName] = event.target.value;
         setStateCharacter(copiedCharacter);
     }
 
     const handleSaga = (event) => {
-        const sagaId =  parseInt(event.target.value);
+        const sagaId = parseInt(event.target.value);
         const selectedSaga = sagas.find(saga => saga.id === sagaId)
-        let copiedCharacter = {...stateCharacter};
+        let copiedCharacter = { ...stateCharacter };
         copiedCharacter.saga = selectedSaga;
         setStateCharacter(copiedCharacter);
-        }
+    }
 
 
 
@@ -84,7 +84,9 @@ const NewCharacterForm = ({ sagas, techniques, postCharacter }) => {
     return (
         <form onSubmit={handleFormSubmit}>
             <hr />
+            <br/>
             <h4> Add a New Character:</h4>
+            <br/>
 
             <input
                 type="text"
@@ -110,10 +112,6 @@ const NewCharacterForm = ({ sagas, techniques, postCharacter }) => {
                 value={stateCharacter.race}
             /><br />
 
-            <select type="text" value={newSeries} onChange={handleSeries}>
-                <option value="DragonBall">DragonBall</option>
-                <option value="DragonBall_Z">DragonBall_Z</option>
-            </select><br/>
 
             {/* <input
                 type="text"
@@ -122,7 +120,6 @@ const NewCharacterForm = ({ sagas, techniques, postCharacter }) => {
                 onChange={handleChange}
                 value={stateCharacter.series}
             /><br /> */}
-
             <input
                 type="text"
                 placeholder="Planet"
@@ -130,7 +127,11 @@ const NewCharacterForm = ({ sagas, techniques, postCharacter }) => {
                 onChange={handleChange}
                 value={stateCharacter.planet}
             /><br />
-
+            <select type="text" value={newSeries} onChange={handleSeries}>
+                <option>Select a Series</option>
+                <option value="DragonBall">DragonBall</option>
+                <option value="DragonBall_Z">DragonBall_Z</option>
+            </select><br />
             <select
                 type="text"
                 // placeholder="Saga"
@@ -145,10 +146,11 @@ const NewCharacterForm = ({ sagas, techniques, postCharacter }) => {
             <select
                 type="text"
                 onChange={handleTechnique}>
-                    <option>Select a Technique</option>
-                    {techniqueOptions}
-                </select>
-                <br />
+                <option>Select a Technique</option>
+                {techniqueOptions}
+            </select>
+            <br />
+            <br/>
 
             {/* <input
                 type="text"

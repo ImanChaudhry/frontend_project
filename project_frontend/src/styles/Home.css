@@ -75,7 +75,8 @@
 
   .home-navbtn:hover {
     /* background:#777; */
-    background:#F2CB05;
+    /* background:#F2CB05; */
+    background:#F29f05;
     /* color: #D90452; */
     /* text-decoration: none; */
     transition: 0.4s;
@@ -84,7 +85,7 @@
   .home-navbtn:focus{
     outline-color: transparent;
     outline-style:solid;
-    box-shadow: 0 0 0 4px #F29F05;
+    box-shadow: 0 0 0 4px #F2CB05;
     transition: 0.7s;
   }
 

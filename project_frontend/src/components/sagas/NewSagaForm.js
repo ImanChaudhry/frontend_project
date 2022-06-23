@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from "react"
 
-const NewSagaForm = ({postSaga, characters }) => {
+const NewSagaForm = ({ postSaga, characters }) => {
 
     // const characterOptions = characters.map((character) => {
     //     return <option key={character.id} value={character.id}> {character.name}, {character.race} </option>
@@ -28,11 +28,11 @@ const NewSagaForm = ({postSaga, characters }) => {
     //         return prev;
     //     });
 
-        // const characterId =  parseInt(event.target.value);
-        // const selectedCharacter = characters.find(character => character.id === characterId)
-        // let copiedSaga = {...stateSaga};
-        // copiedSaga.characters = selectedCharacter;
-        // setStateSaga(copiedSaga);
+    // const characterId =  parseInt(event.target.value);
+    // const selectedCharacter = characters.find(character => character.id === characterId)
+    // let copiedSaga = {...stateSaga};
+    // copiedSaga.characters = selectedCharacter;
+    // setStateSaga(copiedSaga);
     // }
 
     // useEffect(() => {
@@ -68,8 +68,9 @@ const NewSagaForm = ({postSaga, characters }) => {
     return (
         <form onSubmit={handleFormSubmit}>
             <hr />
+            <br/>
             <h4>Add a New Saga:</h4>
-
+            <br/>
             <input
                 type="text"
                 placeholder="Saga Name"
@@ -77,11 +78,6 @@ const NewSagaForm = ({postSaga, characters }) => {
                 onChange={handleChange}
                 value={stateSaga.name}
             /><br />
-
-            <select type="text" value={newSeries} onChange={handleSeries}>
-                <option value="DragonBall">DragonBall</option>
-                <option value="DragonBall_Z">DragonBall Z</option>
-            </select><br />
 
 
             <input
@@ -100,6 +96,12 @@ const NewSagaForm = ({postSaga, characters }) => {
                 onChange={handleChange}
                 value={stateSaga.releaseDate}
             /><br />
+
+            <select type="text" value={newSeries} onChange={handleSeries}>
+                <option>Select a Series</option>
+                <option value="DragonBall">DragonBall</option>
+                <option value="DragonBall_Z">DragonBall Z</option>
+            </select><br />
 
             {/* <select
                 type="text"
