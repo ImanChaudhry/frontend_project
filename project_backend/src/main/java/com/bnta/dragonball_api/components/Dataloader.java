@@ -45,7 +45,7 @@ public class Dataloader implements ApplicationRunner {
                 LocalDate.of(1996,9,13));
 
 
-        Saga friezaSaga = new Saga("Frieza Saga", Series.DragonBall_Z, "36 - 117",
+        Saga friezaSaga = new Saga("Frieza Saga", Series.DragonBall_Z, "36 - 117", "https://dragonball.guru/wp-content/uploads/2021/03/frieza-profile-e1616174138632.png ",
                 LocalDate.of(1997,9,13));
 
 
