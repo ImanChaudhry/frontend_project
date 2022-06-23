@@ -53,7 +53,7 @@
     
     .slide {
       opacity: 0;
-      transition-duration: 1s ease;
+      transition-duration: all 1s ease;
     }
     
     .slide.active {

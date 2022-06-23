@@ -97,7 +97,7 @@
   }
   
   .card-back {
-    color: white;
+    color: #D90452;
     padding: 20px;
     transform: rotateY(180deg);
     /* background-color: #D90452; */
@@ -112,6 +112,7 @@
   
   .card li {
     font-size: 10px;
+    font-weight: bold;
     list-style: none;
     padding-bottom: 5px;
     padding-left: 5px;
