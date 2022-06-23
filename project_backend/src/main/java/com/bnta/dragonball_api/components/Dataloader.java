@@ -291,7 +291,7 @@ public class Dataloader implements ApplicationRunner {
 //        Person chiChi = new Person(Series.DragonBall, "Chi-Chi", 19, "Earth", "Human", piccoloSaga,
 //                Arrays.asList()); //already_used
 
-        Person piccolo = new Person(Series.DragonBall, "Piccolo", 3, "Namek", "Namekian", piccoloSaga,
+        Person piccolo = new Person(Series.DragonBall, "Piccolo", 3, "Namek", "Namekian", piccoloSaga, "https://dragonball.guru/wp-content/uploads/2021/03/Piccolo-Profile-Pic-768x768.png",
                 Arrays.asList(afterImage));
 
 //        Person goku = new Person(Series.DragonBall, "Goku", 18, "Planet Vegeta", "Saiyan", piccoloSaga,
