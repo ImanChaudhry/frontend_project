@@ -104,6 +104,7 @@ public class TechniqueController {
             t.setName(upTechnique.getName());
             t.setType(upTechnique.getType());
             t.setPersons(upTechnique.getPersons());
+            t.setImage(upTechnique.getImage());
             Technique updatedTechnique = techniqueRepository.save(t);
             return new ResponseEntity<>(updatedTechnique,HttpStatus.OK);
         }
