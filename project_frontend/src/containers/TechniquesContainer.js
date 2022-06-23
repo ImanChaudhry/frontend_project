@@ -2,6 +2,9 @@ import { useEffect, useState } from "react";
 import TechniquesList from "../components/techniques/TechniquesList";
 import NewTechniqueForm from "../components/techniques/NewTechniqueForm";
 import Search from "../components/ui/Search";
+import Navbar from "../components/ui/Navbar";
+import ScrollButton from '../components/ui/ScrollButton';
+import { Content } from '../components/ui/ScrollButtonStyles';
 
 const TechniquesContainer = () => {
 
@@ -44,15 +47,16 @@ const TechniquesContainer = () => {
 
   return (
     <>
-      <h1>Technique Cards</h1>
-      <hr />
-      <Search getQuery={(q) => setQuery(q)} /><br /> <br/>
+    <Navbar />
+      <Search getQuery={(q) => setQuery(q)} /><br/><br/>
       <TechniquesList
         techniques={techniques}
-        deleteTechnique={deleteTechnique} /><br/> <br/> <br/> <br/> 
+        deleteTechnique={deleteTechnique} />
       <NewTechniqueForm
         // character={characters}
         postTechnique={postTechnique} />
+         <Content />
+      <ScrollButton />
     </>
   )
 }

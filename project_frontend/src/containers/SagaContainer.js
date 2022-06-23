@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 import SagaList from "../components/sagas/SagaList";
 import NewSagaForm from "../components/sagas/NewSagaForm";
 import Search from "../components/ui/Search";
+import Navbar from "../components/ui/Navbar";
+import ScrollButton from '../components/ui/ScrollButton';
+import { Content } from '../components/ui/ScrollButtonStyles';
 
 const SagaContainer = () => {
 
@@ -44,16 +47,16 @@ const SagaContainer = () => {
 
   return (
     <>
-      <h1>Saga Cards</h1>
-      <hr />
-      <Search getQuery={(q) => setQuery(q)} /><br /> <br />
+     <Navbar />
+      <Search getQuery={(q) => setQuery(q)} /><br/><br/>
       <SagaList
         sagas={sagas}
-        deleteSaga={deleteSaga} /> <br /> <br /> <br /> <br />
+        deleteSaga={deleteSaga} />
       <NewSagaForm
         characters={characters}
-        postSaga={postSaga}
-      />
+        postSaga={postSaga}/>
+         <Content />
+      <ScrollButton />
     </>
   );
 }

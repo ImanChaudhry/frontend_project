@@ -18,7 +18,7 @@ const Saga = ({ saga, deleteSaga }) => {
             <li>
               <strong>Series:</strong> <br />
               {saga.series}
-            </li><br />
+            </li>
             <li>
               <strong>Episodes:</strong> <br />
               {saga.episodes}

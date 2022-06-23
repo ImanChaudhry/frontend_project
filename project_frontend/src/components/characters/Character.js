@@ -15,12 +15,12 @@ const Character = ({ character, deleteCharacter }) => {
                     <button onClick={handleDeleteCharacter}>Delete!</button>
                 </div>
                 <div className="card-back">
-                    <h1>{character.name} </h1>
+                    <h1>{character.name} <br/> <button onClick={handleDeleteCharacter}>Delete!</button></h1>
                     <ul>
                         <li>
                             <strong>Age:</strong> <br/>
                             {character.age}
-                        </li><br />
+                        </li>
                         <li>
                             <strong>Race:</strong> <br/>
                             {character.race}
