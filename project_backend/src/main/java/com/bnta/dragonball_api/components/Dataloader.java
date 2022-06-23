@@ -342,7 +342,7 @@ public class Dataloader implements ApplicationRunner {
 //                saiyanSaga, Arrays.asList(telekinesis, fullPowerCharge, dodonRay, psychicRockThrow, farewellMrTien)); //already_used
 
         Person raditzSaiyanSaga = new Person(Series.DragonBall_Z, "Raditz", 29, "Planet Vegeta", "Saiyan",
-                saiyanSaga, Arrays.asList(fullPower, behindYou, begone, fullPowerEnergyWave));
+                saiyanSaga, "https://dragonball.guru/wp-content/uploads/2021/03/raditz-profile-e1624031860619.png", Arrays.asList(fullPower, behindYou, begone, fullPowerEnergyWave));
 
 //        Person masterRoshiSaiyanSaga = new Person(Series.DragonBall_Z, "Master Roshi", 331, "Earth", "Human",
 //                saiyanSaga, Arrays.asList(afterImage, pumpUp, theOriginalKamehameha, highSpeedRush,thunderShockSurprise)); //already_used
