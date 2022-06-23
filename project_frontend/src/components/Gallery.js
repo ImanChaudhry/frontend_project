@@ -2,7 +2,7 @@ import React from 'react'
 import ImageSlider from "./ui/ImageSlider";
 import { SliderData } from './ui/SliderData';
 import Navbar from './ui/Navbar';
-// import "../styles/Gallery.css";
+import "../styles/Gallery.css";
 
 
 const Gallery = () => {
