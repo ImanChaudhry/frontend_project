@@ -77,7 +77,7 @@ const NewCharacterForm = ({ sagas, techniques, postCharacter }) => {
         event.preventDefault();
         // console.log(stateCharacter);
         postCharacter(stateCharacter);
-        // window.location.reload();
+        window.location.reload();
     }
 
 
