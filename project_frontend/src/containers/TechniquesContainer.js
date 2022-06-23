@@ -5,6 +5,7 @@ import Search from "../components/ui/Search";
 import Navbar from "../components/ui/Navbar";
 import ScrollButton from '../components/ui/ScrollButton';
 import { Content } from '../components/ui/ScrollButtonStyles';
+import "../styles/Technique.css";
 
 const TechniquesContainer = () => {
 
@@ -48,10 +49,11 @@ const TechniquesContainer = () => {
   return (
     <>
     <Navbar />
+    <h1 className="tech-title"> Techniques</h1>
       <Search getQuery={(q) => setQuery(q)} /><br/><br/>
       <TechniquesList
         techniques={techniques}
-        deleteTechnique={deleteTechnique} />
+        deleteTechnique={deleteTechnique} /><br/><br/><br/><br/>
       <NewTechniqueForm
         // character={characters}
         postTechnique={postTechnique} />

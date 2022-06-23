@@ -50,8 +50,9 @@ const [stateTechnique, setStateTechnique] = useState (
 return (
     <form onSubmit={handleFormSubmit}>
         <hr />
+        <br/>
         <h4> Add a New Technique:</h4>
-
+        <br/>
         <input
             type="text"
             placeholder="Technique Name"
@@ -66,7 +67,7 @@ return (
             name="type"
             onChange={handleChange}
             value={stateTechnique.type}
-        /><br />
+        /><br /><br/>
 
         {/* <select
             type="text"

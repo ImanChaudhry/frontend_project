@@ -6,6 +6,7 @@ import Search from "../components/ui/Search";
 import Navbar from "../components/ui/Navbar";
 import ScrollButton from '../components/ui/ScrollButton';
 import { Content } from '../components/ui/ScrollButtonStyles';
+import "../styles/Saga.css";
 
 const SagaContainer = () => {
 
@@ -48,10 +49,11 @@ const SagaContainer = () => {
   return (
     <>
      <Navbar />
+     <h1 className="saga-title"> Sagas</h1>
       <Search getQuery={(q) => setQuery(q)} /><br/><br/>
       <SagaList
         sagas={sagas}
-        deleteSaga={deleteSaga} />
+        deleteSaga={deleteSaga} /><br/><br/><br/><br/>
       <NewSagaForm
         characters={characters}
         postSaga={postSaga}/>

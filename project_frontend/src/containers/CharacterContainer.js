@@ -59,10 +59,9 @@ const CharacterContainer = () => {
   return (
     <>
       <Navbar />
-      {/* <div className="all-char"> */}
-      <h1 className="char-title"> Characters</h1>
       <div className="characters">
-       
+           <h1 className="char-title"> Characters</h1>
+
 <Search getQuery={(q) => setQuery(q)} /><br/><br/>
         <CharacterList
           characters={characters}
@@ -74,7 +73,6 @@ const CharacterContainer = () => {
       </div>
       <Content />
       <ScrollButton />
-      {/* </div> */}
     </>
   )
 }

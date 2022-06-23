@@ -11,11 +11,11 @@ const Character = ({ character, deleteCharacter }) => {
         <div className="card">
             <div className="card-inner">
                 <div className="card-front">
-                    <img src={character.image} alt="character image" />
-                    <button onClick={handleDeleteCharacter}>Delete!</button>
+                    <img src={character.image} alt="selected character" />
                 </div>
                 <div className="card-back">
-                    <h1>{character.name} <br/> <button onClick={handleDeleteCharacter}>Delete!</button></h1>
+                <button className="delete-btn" onClick={handleDeleteCharacter}>X</button>
+                    <h1>{character.name}</h1>
                     <ul>
                         <li>
                             <strong>Age:</strong> <br/>

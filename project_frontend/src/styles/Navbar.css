@@ -40,17 +40,19 @@
   }
   
   .navbar a:hover {
-    background:#F2CB05;
-    /* background:#D90452; */
-    /* color: black; */
+    /* background:#F2CB05; */
+    /* background:#F29F05; */
+    background:#D90452;
+    /* color: #F29F05; */
     text-decoration: none;
     /* transition: 0.4s; */
+    padding: 10px;
   }
 
   .navbar a:focus{
     outline-color: transparent;
     outline-style:solid;
-    box-shadow: 0 0 0 4px #F29F05;
+    box-shadow: 0 0 0 4px #F2CB05;
     transition: 0.7s;
   }
 
