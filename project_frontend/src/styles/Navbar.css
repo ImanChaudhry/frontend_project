@@ -43,11 +43,12 @@
   .navbar a:hover {
     /* background:#F2CB05; */
     /* background:#F29F05; */
-    background:#D90452;
+    background:#F21313;
     /* color: #F29F05; */
     text-decoration: none;
-    /* transition: 0.4s; */
+    /* transition: 0.3s; */
     padding: 10px;
+    border-radius: 3px 3px 3px 3px;
   }
 
   .navbar a:focus{
@@ -58,7 +59,7 @@
   }
 
   .navbar a:active{
-    background-color: #777;
+    background-color: #F29f05;
   }
   
   /* .lineNav {
