@@ -441,10 +441,10 @@ public class Dataloader implements ApplicationRunner {
                 "Android", cellSaga, "https://dragonball.guru/wp-content/uploads/2021/03/android-18-profile-pic.png", Arrays.asList(powerBlitz));
 
         Person android17 = new Person(Series.DragonBall_Z, "Android 17", 3, "Earth",
-                "Android", cellSaga, "https://dragonball.guru/wp-/uploads/2021/03/Android-17-Profile-Pic.png", Arrays.asList(hellBreaker, powerBlitz));
+                "Android", cellSaga, "https://dragonball.guru/wp-content/uploads/2021/03/Android-17-Profile-Pic.png", Arrays.asList(hellBreaker, powerBlitz));
 
         Person android16 = new Person(Series.DragonBall_Z, "Android 16", 3, "Earth",
-                "Android", cellSaga, Arrays.asList(machineImpact));
+                "Android", cellSaga, "https://dragonball.guru/wp-content/uploads/2021/03/Android-16-Profile-Pic-300x300.png", Arrays.asList(machineImpact));
 
 //        Person krillinCellSaga = new Person(Series.DragonBall_Z, "Krillin", 31, "Earth",
 //                "Human", cellSaga, Arrays.asList()); //already_used
