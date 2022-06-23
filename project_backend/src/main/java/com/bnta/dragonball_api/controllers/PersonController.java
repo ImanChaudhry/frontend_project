@@ -374,6 +374,7 @@ public class PersonController {
             p.setRace(upPerson.getRace());
             p.setSaga(upPerson.getSaga());
             p.setTechniques(upPerson.getTechniques());
+            p.setImage(upPerson.getImage());
             Person updatedPerson = personRepository.save(p);
             return new ResponseEntity<>(updatedPerson,HttpStatus.OK);
         }
