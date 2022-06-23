@@ -432,7 +432,7 @@ public class Dataloader implements ApplicationRunner {
                 "Saiyan/Human", cellSaga, "https://dragonball.guru/wp-content/uploads/2021/03/future-trunks-profile-pic.png", Arrays.asList(busterCannon));
 
         Person cell = new Person(Series.DragonBall_Z, "Cell", 6, "Earth",
-                "Android", cellSaga, Arrays.asList(superPerfectForm, kamehameha));
+                "Android", cellSaga, "https://dragonball.guru/wp-content/uploads/2021/03/SeekPng.com_dbz-aura-png_1978081-e1619044254898-768x768.png", Arrays.asList(superPerfectForm, kamehameha));
 
 //        Person gokuCellSaga = new Person(Series.DragonBall_Z, "Goku", 30, "Planet Vegeta",
 //                "Saiyan", cellSaga, Arrays.asList(instantTransmission, SSJ1, kamehameha, afterImage)); //already_used
