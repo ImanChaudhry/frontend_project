@@ -1,20 +1,28 @@
 import React from 'react'
-import ImageSlider from "./ui/ImageSlider";
-import { SliderData } from './ui/SliderData'
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import "../styles/Home.css";
 
 
 const Home = () => {
     return (
-        <>
-            <h2>Welcome to the world of DragonBall</h2>
-            <p> Dragon Ball tells the tale of a young warrior by the name of Son Goku, 
-                a young peculiar boy with a tail who embarks on a quest to become stronger 
-                and learns of the Dragon Balls, when, once all 7 are gathered, 
-                grant any wish of choice.</p>
-            <br/>
-            <ImageSlider slides={SliderData} />
-        </>
-    )
+
+        <div className='App'>
+                <img className="logo-container" src="./images/logo3.png" 
+                alt="Three of Might logo" />
+
+                <p className='text'>"I could go one step farther If I wanted to" - Goku, DragonBall Z</p>
+
+        <div className='nav'>
+                    <ul>         
+                        <button className='home-navbtn'><Link to='/'>Home</Link></button>
+                        <button className='home-navbtn'><Link to='/gallery'>Gallery</Link></button>
+                        <button className='home-navbtn'><Link to='/characters'>Characters</Link></button>
+                        <button className='home-navbtn'><Link to='/sagas'>Sagas</Link></button>
+                        <button className='home-navbtn'><Link to='/techniques'>Techniques</Link></button>
+                    </ul>
+                </div>
+        </div>
+    );
 }
 
-export default Home
+export default Home;

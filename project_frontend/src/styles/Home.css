@@ -1,0 +1,118 @@
+/* .App {
+  text-align: center;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  cursor: pointer } */
+
+  body {
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(14, 14, 14);
+    /* min-height: 150vh; */
+  }
+  
+  .App {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    /* padding-left: 35%;
+    padding-right: auto; */
+    /* background-color: rgb(22, 22, 22);
+    min-height: 100vh; */
+
+  
+  }
+  
+  .App ul {
+    list-style: none;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+  }
+  
+  .App ul li {
+    display: flex;
+    /* justify-content:; */
+  }
+  
+  .logo-container {
+   /* display: block; */
+    padding: 10px;
+    margin: 10px;
+    /* align-items: center; */
+    width: 400px;
+    height: auto;
+    
+  }
+
+  .img :hover{
+    animation: rotation 60s infinite linear;
+  }
+
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  .text {
+    font-size: large;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #fff;
+    /* align-items: center; */
+  }
+
+  .home-navbtn:hover {
+    /* background:#777; */
+    background:#F2CB05;
+    /* color: #D90452; */
+    /* text-decoration: none; */
+    transition: 0.4s;
+  }
+
+  .home-navbtn:focus{
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #F29F05;
+    transition: 0.7s;
+  }
+
+  .home-navbtn:active {
+    background-color: #777;
+    /* color: #D90452; */
+}
+
+/* 
+  .nav ul {
+    display: flex;
+    justify-content: space-around;
+  } */
+
+  .home-navbtn {
+    padding: 10px;
+    margin: 10px;
+    width: fit-content;
+    /* align-items: center; */
+    /* border-radius: 5px; */
+    background-color: #D90452;
+    border: none;
+    border-radius: 3px;;
+    font-size: large;
+    font-family: 'Inter', sans-serif;
+    
+  }
