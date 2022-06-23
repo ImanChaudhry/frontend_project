@@ -300,7 +300,7 @@ public class Dataloader implements ApplicationRunner {
         Person chiaotzu = new Person(Series.DragonBall, "Chiaotzu", 18, "Earth", "Human", piccoloSaga, "https://dragonball.guru/wp-content/uploads/2021/03/Chiaotzu-Profile-Pic.png",
                 Arrays.asList());
 
-        Person tienShinhan = new Person(Series.DragonBall, "Tien Shinhan", 23, "Earth", "Earthling/Cyclops", piccoloSaga,
+        Person tienShinhan = new Person(Series.DragonBall, "Tien Shinhan", 23, "Earth", "Earthling/Cyclops", piccoloSaga, "https://dragonball.guru/wp-content/uploads/2021/03/tien-e1619050541929.png",
                 Arrays.asList(fourWitches));
 
         Person yajirobe = new Person(Series.DragonBall, "Yajirobe", 21, "Earth", "Human", piccoloSaga,
