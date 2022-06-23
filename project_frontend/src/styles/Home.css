@@ -44,13 +44,16 @@
   
   .logo-container {
    /* display: block; */
-    padding: 10px;
-    margin: 10px;
+    /* padding: 10px; */
+    /* margin: 10px; */
     /* align-items: center; */
-    width: 400px;
+    width: 280px;
     height: auto;
     /* animation: rotation 60s infinite linear; */
+  }
 
+  .dragonball {
+    padding: none;
   }
 
 /* 
@@ -78,7 +81,7 @@
   .home-navbtn:hover {
     /* background:#777; */
     /* background:#F2CB05; */
-    background:#F29f05;
+    background:#F2CB05;
     /* color: #D90452; */
     /* text-decoration: none; */
     transition: 0.4s;
@@ -92,7 +95,7 @@
   }
 
   .home-navbtn:active {
-    background-color: #777;
+    background-color: #F29f05;
     /* color: #D90452; */
 }
 
@@ -108,10 +111,14 @@
     width: fit-content;
     /* align-items: center; */
     /* border-radius: 5px; */
-    background-color: #D90452;
+    background-color: #F21313;
     border: none;
     border-radius: 3px;;
     font-size: large;
     font-family: 'Inter', sans-serif;
-    
+  }
+
+  .dragonball img {
+  max-height: 100;
+  width: auto;
   }

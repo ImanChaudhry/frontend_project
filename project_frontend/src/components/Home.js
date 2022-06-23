@@ -7,10 +7,11 @@ const Home = () => {
     return (
 
         <div className='App'>
-                <img className="logo-container" src="./images/logo3.png" 
+             <img className="logo-container" src="./images/logonew.png" 
                 alt="Three of Might logo" />
+<img className="dragonball" src="./images/Dragon-Ball-Logo.png" alt="Dragonball_Z logo"/>
 
-                <p className='text'>"I could go one step farther If I wanted to" - Goku, DragonBall Z</p>
+                {/* <p className='text'>"I could go one step farther If I wanted to" - Goku, DragonBall Z</p> */}
 
         <div className='nav'>
                     <ul>         
@@ -18,7 +19,9 @@ const Home = () => {
                         <button className='home-navbtn'><Link to='/characters'>Characters</Link></button>
                         <button className='home-navbtn'><Link to='/sagas'>Sagas</Link></button>
                         <button className='home-navbtn'><Link to='/techniques'>Techniques</Link></button>
-                    </ul>
+                    </ul>     
+
+
                 </div>
         </div>
     );
