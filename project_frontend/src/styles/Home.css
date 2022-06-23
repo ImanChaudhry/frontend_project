@@ -53,15 +53,10 @@
   .nav a {
     text-decoration: none;
     color: #fff;
-    /* align-items: center; */
   }
 
   .home-navbtn:hover {
-    /* background:#777; */
-    /* background:#F2CB05; */
     background:#F2CB05;
-    /* color: #D90452; */
-    /* text-decoration: none; */
     transition: 0.4s;
   }
 
@@ -74,21 +69,12 @@
 
   .home-navbtn:active {
     background-color: #F29f05;
-    /* color: #D90452; */
 }
-
-/* 
-  .nav ul {
-    display: flex;
-    justify-content: space-around;
-  } */
 
   .home-navbtn {
     padding: 10px;
     margin: 15px;
     width: fit-content;
-    /* align-items: center; */
-    /* border-radius: 5px; */
     background-color: #F21313;
     border: none;
     border-radius: 3px;;

@@ -11,7 +11,7 @@ const Character = ({ character, deleteCharacter }) => {
         <div className="card">
             <div className="card-inner">
                 <div className="card-front">
-                    <img src={character.image} alt="Coming soon..." />
+                    <img className="card-image"src={character.image} alt="Image coming soon..." />
                 </div>
                 <div className="card-back">
                 <button className="delete-btn" onClick={handleDeleteCharacter}>X</button>

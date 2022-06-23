@@ -11,7 +11,6 @@ input {
     display: flex;
      justify-content: center;
      flex-flow: center;
-
   }
 
   .search {
@@ -35,8 +34,7 @@ input {
     justify-content: space-between;
     grid-template-columns: repeat(4, 1fr);
     gap: 3.5rem;
-    padding: 10px;
-   
+    padding: 10px; 
  }
  
   
@@ -79,27 +77,17 @@ input {
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    /* background-color: orange; */
-    /* background-color: #D90452; */
-    /* background-color: #F29F05; */
   }
 
   .card-front {
-    /* background-image: url('https://i.pinimg.com/originals/8a/e8/9a/8ae89a90e576104183339ca5f042757e.jpg'); */
-    /* background-position: center; */
-    /* background-color: #F29F05; */
     background-color: #F2CB05;
   }
   
   .card-back {
-    /* color: #D90452; */
     color: white;
     padding: 20px;
     transform: rotateY(180deg);
-    /* background-color: #D90452; */
-    /* background-color: #F2BC1B; */
     background-color: #F29f05;
-    /* background-color: #BC0D35; */
   }
   
   
@@ -118,9 +106,7 @@ input {
   
   .delete-btn {
     border: none;
-    /* background-color: #F2BC1B; */
     background-color: #F29f05;
-    /* background-color: #D90452; */
     cursor:auto;
     font-size: 7.5px;
     
@@ -148,4 +134,9 @@ input {
       height: 300px;
       object-fit: contain;
     }
+  }
+
+  .card-image {
+    color: black;
+    font-size: 50px;
   }

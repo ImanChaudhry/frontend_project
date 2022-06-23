@@ -12,7 +12,7 @@ const Saga = ({ saga, deleteSaga }) => {
           <img src={saga.image} alt="Coming soon..." />
         </div>
         <div className="card-back">
-        <button className="delete-btn" onClick={handleDeleteSaga}>X</button>
+          <button className="delete-btn" onClick={handleDeleteSaga}>X</button>
           <h1>{saga.name} </h1>
           <ul>
             <li>
@@ -44,15 +44,3 @@ const Saga = ({ saga, deleteSaga }) => {
 }
 
 export default Saga;
-
-  //   <>
-  //    <h3>{saga.name}</h3>
-  //     <p>Series: {saga.series}</p>
-  //     <p>Episodes: {saga.episodes}</p>
-  //     <p>Release Date: {saga.releaseDate}</p>
-  //     <p>Characters: </p>
-  //     <ul>
-  //       {saga.persons.map((person, index) => <li key={index}>{person.name}</li>)}
-  // </ul>
-  // <button onClick={handleDeleteSaga}>Delete!</button>
-  //   </>
