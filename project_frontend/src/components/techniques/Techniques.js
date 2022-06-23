@@ -11,7 +11,6 @@ const Techniques = ({ technique, deleteTechnique }) => {
       <div className="card-inner">
         <div className="card-front">
           <img src="./images/dbz_ball.png" alt="" />
-          <button onClick={handleDeleteTechnique}>Delete!</button>
         </div>
         <div className="card-back">
         <button className="delete-btn" onClick={handleDeleteTechnique}>X</button>

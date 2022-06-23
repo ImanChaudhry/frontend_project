@@ -16,6 +16,3 @@ z-index: 1;
 cursor: pointer;
 color: white;
 `
-
-//margin: -10px;
-

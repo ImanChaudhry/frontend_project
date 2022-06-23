@@ -11,8 +11,6 @@ const Home = () => {
                 alt="Three of Might logo" />
 <img className="dragonball" src="./images/Dragon-Ball-Logo.png" alt="Dragonball_Z logo"/>
 
-                {/* <p className='text'>"I could go one step farther If I wanted to" - Goku, DragonBall Z</p> */}
-
         <div className='nav'>
                     <ul>         
                         <button className='home-navbtn'><Link to='/gallery'>Gallery</Link></button>

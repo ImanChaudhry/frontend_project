@@ -18,14 +18,6 @@ const TechniquesContainer = () => {
       .then(data => setTechniques(data))
   }, [query]);
 
-  // const [characters, setCharacters] = useState([]);
-
-  // useEffect(() => {
-  //   fetch("http://localhost:8080/persons")
-  //     .then(response => response.json())
-  //     .then(data => setCharacters(data))
-  // }, []);
-
   const postTechnique = (newTechnique) => {
     fetch("http://localhost:8080/techniques",
       {
@@ -55,7 +47,6 @@ const TechniquesContainer = () => {
         techniques={techniques}
         deleteTechnique={deleteTechnique} /><br/><br/><br/><br/>
       <NewTechniqueForm
-        // character={characters}
         postTechnique={postTechnique} />
          <Content />
       <ScrollButton />
