@@ -239,7 +239,7 @@ public class Dataloader implements ApplicationRunner {
         Person krillinSonGokuSaga = new Person(Series.DragonBall, "Krillin", 14, "Earth",
                 "Human", sonGokuSaga, "https://dragonball.guru/wp-content/uploads/2021/03/krillin-profile-1-768x768.png", Arrays.asList(afterImage));
         Person yamchaSonGokuSaga = new Person(Series.DragonBall, "Yamcha", 17, "Earth",
-                "Human", sonGokuSaga, , Arrays.asList(wolfFangFist));
+                "Human", sonGokuSaga, "https://dragonball.guru/wp-content/uploads/2021/03/yamcha-profile-e1616269253412.png", Arrays.asList(wolfFangFist));
         Person roshiSonGokuSaga = new Person(Series.DragonBall, "Master Roshi", 320, "Earth",
                 "Human", sonGokuSaga,Arrays.asList(kamehameha,afterImage));
 //        Person launchSonGokuSaga = new Person(Series.DragonBall, "Launch", 17, "Earth",
