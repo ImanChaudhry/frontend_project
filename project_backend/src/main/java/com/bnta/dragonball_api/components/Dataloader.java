@@ -406,7 +406,7 @@ public class Dataloader implements ApplicationRunner {
 //                "Boulean", friezaSaga, Arrays.asList()); //no_pic
 
         Person captainGinyu = new Person(Series.DragonBall_Z, "Captain Ginyu", 0, "Unknown",
-                "Alien", friezaSaga, Arrays.asList(bodyChange));
+                "Alien", friezaSaga, "https://dragonball.guru/wp-content/uploads/2021/03/Captain-Ginyu-Profile-Pic-768x768.png", Arrays.asList(bodyChange));
 
         Person zarbon = new Person(Series.DragonBall_Z, "Zarbon", 0, "Unknown",
                 "Alien", friezaSaga, Arrays.asList(monsterForm));
