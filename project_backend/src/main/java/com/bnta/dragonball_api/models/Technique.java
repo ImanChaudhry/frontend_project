@@ -19,6 +19,8 @@ public class Technique {
     private String name;
     @Column
     private String type;
+    @Column
+    private String image;
 
     @ManyToMany(mappedBy = "techniques",cascade = CascadeType.ALL)
     @JsonIgnoreProperties({"techniques", "saga"})
@@ -26,9 +28,10 @@ public class Technique {
 
     public Technique() {}
 
-    public Technique(String name, String type) {
+    public Technique(String name, String type, String image) {
         this.name = name;
         this.type = type;
+        this.image = image;
         this.persons = new ArrayList<>();
     }
 
