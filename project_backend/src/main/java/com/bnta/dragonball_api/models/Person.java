@@ -24,6 +24,8 @@ public class Person {
     private String planet;
     @Column
     private String race;
+    @Column
+    private String image;
 
 
     @ManyToOne
@@ -45,13 +47,14 @@ public class Person {
 
     public Person() {}
 
-    public Person(Series series, String name, int age, String planet, String race, Saga saga, List<Technique> techniques) {
+    public Person(Series series, String name, int age, String planet, String race, Saga saga, String image, List<Technique> techniques) {
         this.series = series;
         this.name = name;
         this.age = age;
         this.planet = planet;
         this.race = race;
         this.saga = saga;
+        this.image = image;
         this.techniques = techniques;
     }
 
