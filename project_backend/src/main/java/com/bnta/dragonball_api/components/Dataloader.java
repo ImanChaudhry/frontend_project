@@ -49,7 +49,7 @@ public class Dataloader implements ApplicationRunner {
                 LocalDate.of(1997,9,13));
 
 
-        Saga cellSaga = new Saga("Cell Saga", Series.DragonBall_Z, "118 - 194",
+        Saga cellSaga = new Saga("Cell Saga", Series.DragonBall_Z, "118 - 194", "https://dragonball.guru/wp-content/uploads/2021/03/SeekPng.com_dbz-aura-png_1978081-e1619044254898-768x768.png",
                 LocalDate.of(2000,9,4));
 
         Saga majinBuuSaga = new Saga("Majin Buu Saga", Series.DragonBall_Z, "195 - 291",
