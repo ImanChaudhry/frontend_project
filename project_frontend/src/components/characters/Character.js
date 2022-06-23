@@ -16,20 +16,26 @@ const Character = ({ character, deleteCharacter }) => {
                 </div>
                 <div className="card-back">
                     <h1>{character.name} </h1>
-                        <li> 
-                            <strong>Age:</strong> {character.age}
+                    <ul>
+                        <li>
+                            <strong>Age:</strong> <br/>
+                            {character.age}
                         </li><br />
                         <li>
-                            <strong>Race:</strong> {character.race}
+                            <strong>Race:</strong> <br/>
+                            {character.race}
                         </li>
                         <li>
-                            <strong>Series:</strong> {character.series}
+                            <strong>Series:</strong> <br/>
+                            {character.series}
                         </li>
                         <li>
-                            <strong>Planet:</strong> {character.planet}
+                            <strong>Planet:</strong> <br/>
+                            {character.planet}
                         </li>
                         <li>
-                            <strong>Saga:</strong> {character.saga.name}
+                            <strong>Saga:</strong> <br/>
+                            {character.saga.name}
                         </li>
                         <li>
                             <strong>Techniques:</strong>
@@ -37,6 +43,7 @@ const Character = ({ character, deleteCharacter }) => {
                                 {character.techniques.map((technique, index) => <li key={index}>{technique.name}</li>)}
                             </ul>
                         </li>
+                    </ul>
 
                 </div>
 

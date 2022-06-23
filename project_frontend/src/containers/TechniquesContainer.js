@@ -44,13 +44,15 @@ const TechniquesContainer = () => {
 
   return (
     <>
+      <h1>Dragon Ball Z Technique List</h1>
+      <hr />
+      <Search getQuery={(q) => setQuery(q)} /><br /> <br/>
+      <TechniquesList
+        techniques={techniques}
+        deleteTechnique={deleteTechnique} /><br/> <br/> <br/> <br/> 
       <NewTechniqueForm
         // character={characters}
         postTechnique={postTechnique} />
-      <Search getQuery={(q) => setQuery(q)} />
-      <TechniquesList
-        techniques={techniques}
-        deleteTechnique={deleteTechnique} />
     </>
   )
 }

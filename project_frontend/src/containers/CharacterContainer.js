@@ -54,14 +54,16 @@ const CharacterContainer = () => {
 
   return (
     <>
+      <h1>Dragon Ball Z Character List</h1>
+      <hr />
+      <Search getQuery={(q) => setQuery(q)} /><br /> <br/>
+      <CharacterList
+        characters={characters}
+        deleteCharacter={deleteCharacter} /> <br/> <br/> <br/> <br/> 
       <NewCharacterForm
         sagas={sagas}
         techniques={techniques}
         postCharacter={postCharacter} />
-      <Search getQuery={(q) => setQuery(q)} />
-      <CharacterList
-        characters={characters}
-        deleteCharacter={deleteCharacter} />
     </>
   )
 }

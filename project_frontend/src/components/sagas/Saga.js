@@ -6,19 +6,53 @@ const Saga = ({ saga, deleteSaga }) => {
     deleteSaga(saga.id);
   }
   return (
-    <>
-     <h3>{saga.name}</h3>
-      <p>Series: {saga.series}</p>
-      <p>Episodes: {saga.episodes}</p>
-      <p>Release Date: {saga.releaseDate}</p>
-      <p>Characters: </p>
-      <ul>
-        {saga.persons.map((person, index) => <li key={index}>{person.name}</li>)}
-  </ul>
-  <button onClick={handleDeleteSaga}>Delete!</button>
-    </>
+    <div className="card">
+      <div className="card-inner">
+        <div className="card-front">
+          <img src="./images/Logo.jpg" alt="" />
+          <button onClick={handleDeleteSaga}>Delete!</button>
+        </div>
+        <div className="card-back">
+          <h1>{saga.name} </h1>
+          <ul>
+            <li>
+              <strong>Series:</strong> <br />
+              {saga.series}
+            </li><br />
+            <li>
+              <strong>Episodes:</strong> <br />
+              {saga.episodes}
+            </li>
+            <li>
+              <strong>Release Date:</strong> <br />
+              {saga.releaseDate}
+            </li>
+            <li>
+              <strong>Characters:</strong>
+              <ul>
+                {saga.persons.map((person, index) => <li key={index}>{person.name}</li>)}
+              </ul>
+            </li>
+          </ul>
 
+        </div>
+
+      </div>
+
+    </div>
   )
-} 
+}
 
 export default Saga;
+
+  //   <>
+  //    <h3>{saga.name}</h3>
+  //     <p>Series: {saga.series}</p>
+  //     <p>Episodes: {saga.episodes}</p>
+  //     <p>Release Date: {saga.releaseDate}</p>
+  //     <p>Characters: </p>
+  //     <ul>
+  //       {saga.persons.map((person, index) => <li key={index}>{person.name}</li>)}
+  // </ul>
+  // <button onClick={handleDeleteSaga}>Delete!</button>
+  //   </>
