@@ -9,7 +9,7 @@ const Saga = ({ saga, deleteSaga }) => {
     <div className="card">
       <div className="card-inner">
         <div className="card-front">
-          <img src={saga.image} alt="saga image" />
+          <img src={saga.image} alt="Coming soon..." />
         </div>
         <div className="card-back">
         <button className="delete-btn" onClick={handleDeleteSaga}>X</button>

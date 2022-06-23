@@ -43,6 +43,7 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 3.5rem;
     padding: 10px;
+   
  }
  
   
@@ -50,7 +51,7 @@
     cursor: pointer;
     background-color: transparent;
     height: 300px;
-    perspective: 1000px;
+    perspective: 1000px; 
 }
    
 .card h1 {
@@ -93,15 +94,19 @@
   .card-front {
     /* background-image: url('https://i.pinimg.com/originals/8a/e8/9a/8ae89a90e576104183339ca5f042757e.jpg'); */
     /* background-position: center; */
-    background-color: #F29F05;
+    /* background-color: #F29F05; */
+    background-color: #F2BC1B;
   }
   
   .card-back {
-    color: #D90452;
+    /* color: #D90452; */
+    color: white;
     padding: 20px;
     transform: rotateY(180deg);
     /* background-color: #D90452; */
-    background-color: #F2BC1B;
+    /* background-color: #F2BC1B; */
+    background-color: #F29F05;
+    /* background-color: #BC0D35; */
   }
   
   
@@ -120,7 +125,9 @@
   
   .delete-btn {
     border: none;
-    background-color: #F2BC1B;
+    /* background-color: #F2BC1B; */
+    background-color: #F29F05;
+    /* background-color: #D90452; */
     cursor:auto;
     font-size: 7.5px;
     
