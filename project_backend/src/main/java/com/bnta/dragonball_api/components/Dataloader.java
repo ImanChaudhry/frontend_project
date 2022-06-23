@@ -419,7 +419,7 @@ public class Dataloader implements ApplicationRunner {
 //                friezaSaga, Arrays.asList(galickGun, lucoraGun)); //already_used
 
         Person frieza = new Person(Series.DragonBall_Z, "Frieza", 32, "Unknown","Alien",
-                friezaSaga, Arrays.asList(deathCannon, deathSaucer));
+                friezaSaga, "https://dragonball.guru/wp-content/uploads/2021/03/frieza-profile-e1616174138632.png ", Arrays.asList(deathCannon, deathSaucer));
 
         // Dragon ball Z - Cell saga
 //        Person teenGohan = new Person(Series.DragonBall_Z, "Teen Gohan", 10, "Earth",
