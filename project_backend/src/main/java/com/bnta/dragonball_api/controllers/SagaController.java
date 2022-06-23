@@ -209,6 +209,7 @@ public class SagaController {
             s.setName(upSaga.getName());
             s.setSeries(upSaga.getSeries());
             s.setEpisodes(upSaga.getEpisodes());
+            s.setImage(upSaga.getImage());
             s.setReleaseDate(upSaga.getReleaseDate());
             s.setPersons(upSaga.getPersons());
             Saga updatedSaga = sagaRepository.save(s);
