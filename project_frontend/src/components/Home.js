@@ -14,7 +14,6 @@ const Home = () => {
 
         <div className='nav'>
                     <ul>         
-                        <button className='home-navbtn'><Link to='/'>Home</Link></button>
                         <button className='home-navbtn'><Link to='/gallery'>Gallery</Link></button>
                         <button className='home-navbtn'><Link to='/characters'>Characters</Link></button>
                         <button className='home-navbtn'><Link to='/sagas'>Sagas</Link></button>
