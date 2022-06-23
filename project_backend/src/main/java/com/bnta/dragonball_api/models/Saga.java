@@ -23,6 +23,8 @@ public class Saga {
     @Column
     private String episodes;
     @Column
+    private String image;
+    @Column
     private LocalDate releaseDate;
     @OneToMany(mappedBy = "saga", cascade = CascadeType.ALL)
     @JsonIgnoreProperties({ "saga", "techniques"})
@@ -30,10 +32,11 @@ public class Saga {
 
     public Saga() {}
 
-    public Saga(String name, Series series, String episodes, LocalDate releaseDate) {
+    public Saga(String name, Series series, String episodes, String image, LocalDate releaseDate) {
         this.name = name;
         this.series = series;
         this.episodes = episodes;
+        this.image = image;
         this.releaseDate = releaseDate;
         this.persons = new ArrayList<>();
     }
