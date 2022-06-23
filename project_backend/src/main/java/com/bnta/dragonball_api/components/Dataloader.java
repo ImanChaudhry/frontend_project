@@ -354,7 +354,7 @@ public class Dataloader implements ApplicationRunner {
 //                saiyanSaga, Arrays.asList(solarFlare, afterImage, dodonRay,neoTriBeam)); //already_used
 
         Person vegetaSaiyanSaga = new Person(Series.DragonBall_Z, "Vegeta", 29, "Planet Vegeta", "Saiyan",
-                saiyanSaga, Arrays.asList(explosiveWave, fullPower, galickGun, superExplosiveWave ));
+                saiyanSaga, "https://dragonball.guru/wp-content/uploads/2021/03/vegeta-profile.png", Arrays.asList(explosiveWave, fullPower, galickGun, superExplosiveWave ));
 
 //        Person gokuSaiyanSaga = new Person(Series.DragonBall_Z, "Goku", 24, "Planet Vegeta", "Saiyan",
 //                saiyanSaga, Arrays.asList(solarFlare, kaioken, kamehameha, kaiokenAttack)); //already_used
