@@ -6,6 +6,7 @@ import Search from "../components/ui/Search";
 import Navbar from "../components/ui/Navbar";
 import ScrollButton from '../components/ui/ScrollButton';
 import { Content } from '../components/ui/ScrollButtonStyles';
+import "../styles/Character.css";
 
 const CharacterContainer = () => {
 
@@ -57,19 +58,23 @@ const CharacterContainer = () => {
 
   return (
     <>
-    <Navbar />
+      <Navbar />
+      {/* <div className="all-char"> */}
+      <h1 className="char-title"> Characters</h1>
       <div className="characters">
-          <NewCharacterForm className="form"
-            sagas={sagas}
-            techniques={techniques}
-            postCharacter={postCharacter} />
-          <Search getQuery={(q) => setQuery(q)} />
-          <CharacterList
-            characters={characters}
-            deleteCharacter={deleteCharacter} />
-    </div>
-         <Content />
-            <ScrollButton />
+       
+<Search getQuery={(q) => setQuery(q)} /><br/><br/>
+        <CharacterList
+          characters={characters}
+          deleteCharacter={deleteCharacter} />
+        <NewCharacterForm className="form"
+          sagas={sagas}
+          techniques={techniques}
+          postCharacter={postCharacter} />
+      </div>
+      <Content />
+      <ScrollButton />
+      {/* </div> */}
     </>
   )
 }

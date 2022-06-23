@@ -27,8 +27,6 @@
     padding-right: auto; */
     /* background-color: rgb(22, 22, 22);
     min-height: 100vh; */
-
-  
   }
   
   .App ul {
@@ -50,13 +48,11 @@
     /* align-items: center; */
     width: 400px;
     height: auto;
-    
+    /* animation: rotation 60s infinite linear; */
+
   }
 
-  .img :hover{
-    animation: rotation 60s infinite linear;
-  }
-
+/* 
   @keyframes rotation {
     from {
       transform: rotate(0deg);
@@ -64,7 +60,7 @@
     to {
       transform: rotate(359deg);
     }
-  }
+  } */
 
   .text {
     font-size: large;

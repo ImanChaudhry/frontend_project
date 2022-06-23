@@ -19,7 +19,7 @@ const Techniques = ({ technique, deleteTechnique }) => {
             <li>
               <strong>Type:</strong> <br />
               {technique.type}
-            </li><br />
+            </li>
             <li>
               <strong>Characters:</strong> <br />
               <ul>
