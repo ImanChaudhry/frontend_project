@@ -41,7 +41,7 @@ public class Dataloader implements ApplicationRunner {
                 LocalDate.of(2002, 12, 5));
 
         // Dragon ball Z sagas
-        Saga saiyanSaga = new Saga("Saiyan Saga", Series.DragonBall_Z,"1 - 35",
+        Saga saiyanSaga = new Saga("Saiyan Saga", Series.DragonBall_Z,"1 - 35","https://toppng.com/uploads/preview/oku-and-vegeta-saiyan-saga-dragon-ball-z-goku-11563159353grvhllonaq.png",
                 LocalDate.of(1996,9,13));
 
 
