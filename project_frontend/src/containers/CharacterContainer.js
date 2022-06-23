@@ -3,6 +3,9 @@ import { useEffect, useState } from "react";
 import CharacterList from "../components/characters/CharacterList";
 import NewCharacterForm from "../components/characters/NewCharacterForm";
 import Search from "../components/ui/Search";
+import Navbar from "../components/ui/Navbar";
+import ScrollButton from '../components/ui/ScrollButton';
+import { Content } from '../components/ui/ScrollButtonStyles';
 
 const CharacterContainer = () => {
 
@@ -54,16 +57,19 @@ const CharacterContainer = () => {
 
   return (
     <>
-      <h1>Character Cards</h1>
-      <hr />
-      <Search getQuery={(q) => setQuery(q)} /><br /> <br/>
-      <CharacterList
-        characters={characters}
-        deleteCharacter={deleteCharacter} /> <br/> <br/> <br/> <br/> 
-      <NewCharacterForm
-        sagas={sagas}
-        techniques={techniques}
-        postCharacter={postCharacter} />
+    <Navbar />
+      <div className="characters">
+          <NewCharacterForm className="form"
+            sagas={sagas}
+            techniques={techniques}
+            postCharacter={postCharacter} />
+          <Search getQuery={(q) => setQuery(q)} />
+          <CharacterList
+            characters={characters}
+            deleteCharacter={deleteCharacter} />
+    </div>
+         <Content />
+            <ScrollButton />
     </>
   )
 }
