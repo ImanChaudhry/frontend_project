@@ -77,4 +77,4 @@ Here are a few ideas on how we would like to expand on this front-end project:
 - Implement media queries on the Navbar
 
 ## Acknowledgments:
-We would like to thank the Bright Network Technology Academy team and especially to Ana, Richard and Iain!
+We would like to thank the Bright Network Technology Academy team and especially to Anna, Richard and Iain!
