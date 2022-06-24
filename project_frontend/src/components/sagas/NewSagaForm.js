@@ -3,41 +3,14 @@ import { useState } from "react"
 
 const NewSagaForm = ({ postSaga, characters }) => {
 
-    // const characterOptions = characters.map((character) => {
-    //     return <option key={character.id} value={character.id}> {character.name}, {character.race} </option>
-    // });
-
     const [stateSaga, setStateSaga] = useState(
         {
             name: "",
             series: "",
             episodes: "",
             releaseDate: "",
-            // characters: []
         }
     )
-
-    // const handleCharacters= (event) => {
-    //     const characterId =  parseInt(event.target.value);
-    //     console.log(characterId);
-    //     const selectedCharacter = characters.find(character => character.id === characterId)
-    //     setStateSaga((prev) => {
-    //         console.log(setStateSaga)
-    //         // debugger;
-    //         prev.characters.push(selectedCharacter);
-    //         return prev;
-    //     });
-
-    // const characterId =  parseInt(event.target.value);
-    // const selectedCharacter = characters.find(character => character.id === characterId)
-    // let copiedSaga = {...stateSaga};
-    // copiedSaga.characters = selectedCharacter;
-    // setStateSaga(copiedSaga);
-    // }
-
-    // useEffect(() => {
-    //     console.log(stateSaga);
-    // }, [stateSaga])
 
     const [newSeries, setNewSeries] = useState("");
 
@@ -59,11 +32,8 @@ const NewSagaForm = ({ postSaga, characters }) => {
 
     const handleFormSubmit = (event) => {
         event.preventDefault();
-        // console.log(stateCharacter);
         postSaga(stateSaga);
-        // window.location.reload();
     }
-
 
     return (
         <form onSubmit={handleFormSubmit}>
@@ -102,13 +72,6 @@ const NewSagaForm = ({ postSaga, characters }) => {
                 <option value="DragonBall">DragonBall</option>
                 <option value="DragonBall_Z">DragonBall Z</option>
             </select><br />
-
-            {/* <select
-                type="text"
-                onChange={handleCharacters}>
-                <option>Select a Character</option>
-                {characterOptions}
-            </select> */}
             <br />
             <button type='submit'>Add</button>
         </form>

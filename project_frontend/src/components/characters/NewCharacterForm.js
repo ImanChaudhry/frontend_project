@@ -37,18 +37,10 @@ const NewCharacterForm = ({ sagas, techniques, postCharacter }) => {
         const techniqueId = parseInt(event.target.value);
         console.log(techniqueId);
         const selectedTechnique = techniques.find(technique => technique.id === techniqueId)
-        //let copiedCharacter = {...stateCharacter}; //Creates a shallow copy
-        //copiedCharacter.techniques = selectedTechnique;
-        //setStateCharacter(copiedCharacter);
         setStateCharacter((prev) => {
-            // console.log(selectedTechnique);
-            // debugger;
             prev.techniques.push(selectedTechnique);
             return prev;
         });
-        // console.log(copiedCharacter.techniques);
-        // console.log(stateCharacter)
-        //debugger;
     }
 
     useEffect(() => {
