@@ -24,7 +24,7 @@ This front-end project was built using HTML, CSS and ReactJs.
 
 ## Table of Contents:
 - [Setup and Instructions for using the Project](#setup-and-instructions-for-using-the-project)
-- [WireFrame](#wireframe)
+- [WireFrames](#wireframes)
 - [Minimum Viable Product (MVP)](#minimum-viable-product-mvp)
 - [Extensions](#extensions)
 - [Testing](#testing)
@@ -37,7 +37,7 @@ This front-end project was built using HTML, CSS and ReactJs.
     - Please note, the server port should configure to 8080 by default (if you have another server running on port 8080 please terminate this before trying to connect to the API)
 3. Open the front-end project in Visual Studio Code - this can be found in the ‘project_frontend’ folder 
 4. Type `npm install (shortcut: npm i)` in your terminal to install the required node modules
-5. Please also run the following commands in your terminal to install all the necessary dependencies. 
+5. Please also run the following commands in your terminal to install all the necessary dependencies. <br/>
             `npm i react-router-dom`<br/>
             `npm i react-slideshow-image`<br/>
             `npm i icons`<br/>
@@ -45,10 +45,10 @@ This front-end project was built using HTML, CSS and ReactJs.
 6. To run the front-end application, please type ‘npm start’ in your terminal.
     - Please note, the front-end application should run on ‘localhost:3000’ unless you have another application running on this host - if so, you will have the option to run this on another host i.e. localhost:3001. This will not affect the running of the project.
 
-## WireFrame:
-    ![Homepage WireFrame](project_frontend/wireframe_screenshots/homepage_wireframe.png)
+## WireFrames:
+  ![Homepage](project_frontend/wireframe_screenshots/homepage_wireframe.png)
 
-    ![Pages WireFrame](project_frontend/wireframe_screenshots/pages_wireframe.png)
+  ![Pages](project_frontend/wireframe_screenshots/pages_wireframe.png)
 
 ## Minimum Viable Product (MVP):
 For our MVP, we wanted to create a website design for the backend DragonBall API with the following features:
